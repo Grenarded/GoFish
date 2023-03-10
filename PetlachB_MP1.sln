@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.21
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetlachB_MP1", "PetlachB_MP1\PetlachB_MP1.csproj", "{F95B51F3-91CB-4D7D-BB6C-BD5D38BF257C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F95B51F3-91CB-4D7D-BB6C-BD5D38BF257C}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{F95B51F3-91CB-4D7D-BB6C-BD5D38BF257C}.Debug|anycpu.Build.0 = Debug|anycpu
+		{F95B51F3-91CB-4D7D-BB6C-BD5D38BF257C}.Release|anycpu.ActiveCfg = Release|anycpu
+		{F95B51F3-91CB-4D7D-BB6C-BD5D38BF257C}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A094C759-CBAD-4ED8-BD72-861A58829298}
+	EndGlobalSection
+EndGlobal

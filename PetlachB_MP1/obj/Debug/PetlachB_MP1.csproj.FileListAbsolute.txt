@@ -1,0 +1,6 @@
+/Users/benpetlach/Desktop/School/ICS4/Assignments/Portfolio/PetlachB_MP1/PetlachB_MP1/bin/Debug/PetlachB_MP1.exe
+/Users/benpetlach/Desktop/School/ICS4/Assignments/Portfolio/PetlachB_MP1/PetlachB_MP1/bin/Debug/PetlachB_MP1.pdb
+/Users/benpetlach/Desktop/School/ICS4/Assignments/Portfolio/PetlachB_MP1/PetlachB_MP1/obj/Debug/PetlachB_MP1.csproj.AssemblyReference.cache
+/Users/benpetlach/Desktop/School/ICS4/Assignments/Portfolio/PetlachB_MP1/PetlachB_MP1/obj/Debug/PetlachB_MP1.csproj.CoreCompileInputs.cache
+/Users/benpetlach/Desktop/School/ICS4/Assignments/Portfolio/PetlachB_MP1/PetlachB_MP1/obj/Debug/PetlachB_MP1.exe
+/Users/benpetlach/Desktop/School/ICS4/Assignments/Portfolio/PetlachB_MP1/PetlachB_MP1/obj/Debug/PetlachB_MP1.pdb
