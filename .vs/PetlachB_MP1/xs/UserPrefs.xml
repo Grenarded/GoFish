@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{F95B51F3-91CB-4D7D-BB6C-BD5D38BF257C}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="PetlachB_MP1/Program.cs">
     <Files>
-      <File FileName="PetlachB_MP1/Program.cs" Line="285" Column="42" />
+      <File FileName="PetlachB_MP1/Program.cs" Line="561" Column="14" />
       <File FileName="PetlachB_MP1/Card.cs" />
       <File FileName="PetlachB_MP1/Deck.cs" />
       <File FileName="PetlachB_MP1/Hand.cs" />

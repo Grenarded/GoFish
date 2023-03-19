@@ -1,4 +1,11 @@
-﻿using System;
+﻿//Author: Ben Petlach
+//File Name: Deck.cs
+//Project Name: PetlachB_MP1
+//Creation Date: March 8, 2023
+//Modified Date: March 13, 2023
+//Description: File for the deck object, which is used throughout the game to hand out cards to the players. Cards with their respective info are stored in the deck originally, and thus any manipulations (such as shuffling) occur here
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
