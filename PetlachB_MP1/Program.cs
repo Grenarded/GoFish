@@ -18,6 +18,11 @@ namespace PetlachB_MP1
         private const int PLAYER = 0;
         private const int CPU = 1;
 
+        //Game actions
+        const int ASK_CARD = 1;
+        const int DROP_PAIR = 2;
+        const int DRAW_CARD = 3;
+
         static Random rng = new Random();
 
         static Hand[] gameHands = new Hand[NUM_PLAYERS] {new Hand(), new Hand()};
@@ -26,17 +31,11 @@ namespace PetlachB_MP1
 
         static Deck deck = new Deck();
 
-        //Game actions
-        const int ASK_CARD = 1;
-        const int DROP_PAIR = 2;
-        const int DRAW_CARD = 3;
-
         //Highlight
         static bool highlight = false;
 
         public static void Main(string[] args)
         {
-            //char.IsDigit();
             string input = "";
             while (!input.Equals("2"))
             {
@@ -113,10 +112,8 @@ namespace PetlachB_MP1
 
                     bool validInput = false;
 
-                    //TODO: Make input checking into a method?
                     while (!validInput)
                     {
-                        //input = 0;
                         if (int.TryParse(Console.ReadLine(), out input))
                         {
                             if (input == ASK_CARD || input == DROP_PAIR || input == DRAW_CARD)
@@ -400,7 +397,6 @@ namespace PetlachB_MP1
                     Console.ResetColor();
                     Console.ReadLine();
                 }
-
                 return false;
             }
         }
@@ -452,8 +448,6 @@ namespace PetlachB_MP1
             }
 
             Console.WriteLine($"-PLAYER- (Matches: {gameHands[PLAYER].GetNumMatches()})\n");
-
-
             Console.Write("HAND: ".PadRight(PAD_SPACING));
 
             for (int i = 0; i < NUM_PLAYERS; i++)
@@ -512,7 +506,6 @@ namespace PetlachB_MP1
 
                             Console.Write(space + j + "".PadRight(Card.CARD_SPACING));
                         }
-
                     }
                 }
 
@@ -548,7 +541,7 @@ namespace PetlachB_MP1
 
             const int TIE = 2;
 
-            int winner = -1;
+            int winner;
 
             if (gameHands[PLAYER].GetNumMatches() > gameHands[CPU].GetNumMatches())
             {
@@ -567,20 +560,23 @@ namespace PetlachB_MP1
             {
                 case TIE:
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
-                    Console.WriteLine($"It's a tie! \nAll players had {gameHands[CPU].GetNumMatches()} matches");
+                    Console.WriteLine("It's a tie!");
                     Console.ResetColor();
                     break;
                 case PLAYER:
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"You are the winner! You had {gameHands[PLAYER].GetNumMatches()} matches");
+                    Console.WriteLine("You are the winner!");
                     Console.ResetColor();
                     break;
                 case CPU:
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"You lost! The CPU had {gameHands[CPU].GetNumMatches()} matches");
+                    Console.WriteLine("You lost!");
                     Console.ResetColor();
                     break;
             }
+            Console.WriteLine();
+            Console.WriteLine($"You had: {gameHands[PLAYER].GetNumMatches()} matches");
+            Console.WriteLine($"The CPU had: {gameHands[CPU].GetNumMatches()} matches");
             Console.WriteLine("Press <enter> to return to main menu");
         }
     }

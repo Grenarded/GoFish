@@ -68,8 +68,6 @@ namespace PetlachB_MP1
 
             return -1;
         }
-
-        //FIGURE THIS OUT. SHOULD NOT START AT SAME INDEX AS FIRST ONE
         public int HasCardMatch(Card card)
         {
             for (int i = 0; i < GetSize(); i++)
